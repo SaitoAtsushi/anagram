@@ -60,9 +60,10 @@ fn main() {
             for v in anagram_words.iter() {
                 if v.is_empty().not() {
                     print!("{}", v[0]);
-                }
-                for e in &v[1..] {
-                    print!(",{}", e);
+
+                    for e in &v[1..] {
+                        print!(",{}", e);
+                    }
                 }
                 println!("");
             }
